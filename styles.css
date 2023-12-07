@@ -1,0 +1,359 @@
+body,html{
+    /* background-color: #323238; */
+    background-image: url(/Images/wes-hicks-qL4QF9Urxdg-unsplash.jpg);
+    
+    height: 100%;
+    position: relative;
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  font-family: 'Luckiest Guy';
+  /* font-family: 'Oswald', sans-serif; */
+}
+
+.titlename{
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    color: white;
+    font-size: 7rem;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    margin-left: 1px;
+}
+p , h2{
+    color: rgb(51, 255, 0);
+    font-family: 'Oswald', sans-serif;
+}
+#profilepicture{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.397);
+    border-radius: 5px;
+    height: 500px;
+}
+.navigation {
+position: fixed;
+top: 4rem;
+right: 3rem;
+margin-top: 5%;
+z-index: 1;
+color: black;
+}
+a:link {
+  color:rgb(255, 255, 255);
+  -webkit-background-clip: text;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 1s;
+  
+}
+a:hover {
+  color: rgb(51, 255, 0);
+  background-color: transparent;
+  text-decoration: underline;
+  transition: 1s;
+}
+a:active {
+  color:(rgba(20, 255, 3), #fffdfd);
+  background-color: transparent;
+  text-decoration: underline;
+  transition: 1s;
+}
+a:visited {
+color:(rgba(20, 255, 3), #fffdfd);
+  -webkit-background-clip: text;
+  text-decoration: none;
+  transition: 1s;
+}
+.abouttitle{
+    writing-mode:vertical-lr;
+    transform: rotate(180deg); 
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.849), #fffdfdbe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8rem;
+    display: inline;
+    position: absolute;
+    left: 1rem;
+}
+.aboutsection{
+  margin-top: 12%;
+  margin-left: 20rem;
+  display: flex;
+  background: linear-gradient(90deg,#eeede7 51%, #ffffff05 10% ,#323238 );
+  width: 59.5rem;
+  height: 40rem;
+}
+.aboutcontent{
+  margin-top: 2%;
+}
+.aboutcontent div {
+  border-bottom: solid black 2px;
+  width: 30.4rem;
+  padding-left: 5rem;
+  margin-right: 0px;
+  padding-right: 0px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.aboutcontent p{
+  padding-left: 0.7rem;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+}
+.aboutme p{
+  margin-left: 15px;
+  margin-top: 3%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  
+}
+.aboutcontent h2{
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+i{
+  color: rgb(0, 0, 0);
+  font-size: 31px;
+  padding-left: 10px;
+}
+.knowledge{
+margin-top: 15%;
+width: 100%;
+height: 70%;
+}
+.container p{
+  font-size: 25px;
+  color: white;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+  color: #333;
+  font-family: 'Lato';
+}
+
+.container {
+  padding: 50px 0;
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 400px;
+
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+.chart figcaption {
+  padding: 50px 25px;
+  width: 190px;
+  height: 190px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+  margin-left: 30px;
+}
+
+.chart img {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+ background: transparent;
+ margin-left: 30px;
+}
+.html {
+  top: 50px;
+  left: 45px;
+}
+
+.html + svg .outer {
+  stroke: #e34f26;
+}
+
+.css {
+ top: 60px;
+ left: 47px;
+}
+
+.css + svg .outer {
+  stroke: #0d84ce;
+}
+
+.javascript {
+  max-width: 90px;
+  max-height: 90px;
+  top: 45px;
+  left: 45px;
+}
+
+.javascript + svg .outer {
+  stroke: #f0e040;
+}
+
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 30px;
+}
+.boot {
+  width: 200px;
+  height: 200px;
+  top: 45px;
+  left: 45px;
+  position: absolute;
+}
+
+.boot + svg .outer {
+  stroke: #f707ff;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  -webkit-animation-play-state: paused;
+}
+
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show75 7s;
+  animation: show75 7s;
+}
+
+.chart[data-percent='50'] .outer {
+  stroke-dashoffset: 267;
+  -webkit-animation: show50 7s;
+  animation: show50 7s;
+}
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 124;
+  }
+}
+
+@-webkit-keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+.brancoveanulogo{
+  width: 100px;
+  position: absolute;
+  left: 33%;
+ margin-top: 4%;
+}
+.education{
+  margin-left: 15%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: start;
+  background: linear-gradient(90deg,#00000038 45%, #ffffff0e 20% ,#323238;)
+}
+h4{
+  color: rgb(51, 255, 0);
+}
+.school p{
+  color: white;
+}
+.school{
+  width: 320px;
+}
+.forestlogo{
+  position: absolute;
+  left: 33%;
+  margin-top: 17%;
+  width: 100px;
+  border-radius: 66px;
+}
+.courses{
+  margin-left: 34%;
+  width: 380px;
+  padding-top: 3%;
+}
+.abouttitle.courses{
+  left: 7%;
+  font-size: 8rem;
+}
+.courses p{
+  color: rgba(255, 255, 255, 0.548);
+}
+.telecom{
+  position: absolute;
+ width: 350px;
+ rotate: 90deg;
+ right: 3%;
+ margin-top: 7%;
+border: solid rgb(255, 255, 255) 2px;
+border-radius: 10px;
+padding: 20px;
+
+}
+.telecom:hover{
+  border-color: rgb(0, 255, 255);
+  box-shadow: 3px 3px 12px rgb(0, 254, 254);
+}
+.portofolio{
+  margin-top: 300px;
+  margin-left: 100px;
+  padding-bottom: 10%;
+}
+.portofoliotitle{
+  writing-mode:vertical-lr;
+  transform: rotate(300deg); 
+  background: -webkit-linear-gradient(#eeeeeed0, #747474);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 11rem;
+  position: absolute;
+  right: 35%;
+  margin-bottom: 200px;
+}
